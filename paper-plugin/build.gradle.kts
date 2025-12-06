@@ -49,6 +49,10 @@ tasks {
         dependsOn(shadowJar)
     }
 
+    build {
+        dependsOn(shadowJar)
+    }
+
     afterEvaluate {
         generateDynamicLibrariesLoaderClass {
             excludePaperweightInternalRepositories()
