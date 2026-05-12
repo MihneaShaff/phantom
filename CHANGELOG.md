@@ -1,5 +1,55 @@
 # Changelog
 
+## [0.10.2](https://github.com/tozydev/phantom/compare/v0.10.1...v0.10.2) (2026-01-13)
+
+
+### Bug Fixes
+
+* downgrade invui to 2.0.0-alpha.21.1.1 ([1cc3ae7](https://github.com/tozydev/phantom/commit/1cc3ae770dea386570bd22f2109897152aacfa2b))
+
+## [0.10.1](https://github.com/tozydev/phantom/compare/v0.10.0...v0.10.1) (2026-01-13)
+
+
+### Bug Fixes
+
+* **gradle-plugin:** correct public Maven repo host ([511f0e5](https://github.com/tozydev/phantom/commit/511f0e5682514c88c42443322a0a6a315f7b6ee1))
+
+## [0.10.0](https://github.com/tozydev/phantom/compare/v0.9.2...v0.10.0) (2026-01-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **infra:** migrate host repository to tozydev Maven Repository
+
+### Bug Fixes
+
+* **deps:** update dependency com.palantir.javapoet:javapoet to v0.10.0 ([#117](https://github.com/tozydev/phantom/issues/117)) ([e7a8ae1](https://github.com/tozydev/phantom/commit/e7a8ae1d0300bb92c04ce328df4fd0e736668420))
+* **deps:** update dependency org.mariadb.jdbc:mariadb-java-client to v3.5.7 ([#112](https://github.com/tozydev/phantom/issues/112)) ([744f876](https://github.com/tozydev/phantom/commit/744f876d78417909fc0f49885036e24c47b3bfe3))
+* **deps:** update invui to v2.0.0-alpha.26 ([#109](https://github.com/tozydev/phantom/issues/109)) ([3e6b921](https://github.com/tozydev/phantom/commit/3e6b921ccbee38ccdaa5f4e7bc5c6d1117b5e26c))
+* **deps:** update plugin-libs ([#110](https://github.com/tozydev/phantom/issues/110)) ([de6f920](https://github.com/tozydev/phantom/commit/de6f920ed00c3cdaaf701a86cfcf6f6110a88e5c))
+* **deps:** update plugin-libs ([#115](https://github.com/tozydev/phantom/issues/115)) ([5f3673e](https://github.com/tozydev/phantom/commit/5f3673ee137c9a1c0feb30eb35e7e0460ca07fa5))
+
+
+### Code Refactoring
+
+* **infra:** migrate host repository to tozydev Maven Repository ([645570c](https://github.com/tozydev/phantom/commit/645570cf1ce0b7c81599b92175948afecccdabda))
+
+## [0.9.2](https://github.com/tozydev/phantom/compare/v0.9.1...v0.9.2) (2025-12-06)
+
+
+### Bug Fixes
+
+* change plugin load order to startup ([f41de25](https://github.com/tozydev/phantom/commit/f41de25676dc233a2e101e3e5ad70a01cc97784d))
+* **deps:** update dependency com.palantir.javapoet:javapoet to v0.9.0 ([#103](https://github.com/tozydev/phantom/issues/103)) ([def99d3](https://github.com/tozydev/phantom/commit/def99d35c2f8344c9781b32b40f484a434436874))
+* **deps:** update dependency org.jetbrains.exposed:exposed-bom to v1.0.0-rc-4 ([#93](https://github.com/tozydev/phantom/issues/93)) ([0226cf3](https://github.com/tozydev/phantom/commit/0226cf334f28cd23da3e2fe2e2aa4024e51f199a))
+* **deps:** update dependency org.xerial:sqlite-jdbc to v3.51.1.0 ([#105](https://github.com/tozydev/phantom/issues/105)) ([7b0303a](https://github.com/tozydev/phantom/commit/7b0303a581373e21084ace6bcc5193970794c315))
+* isolate the eco plugin classpath because of conflict ([5c666d3](https://github.com/tozydev/phantom/commit/5c666d3941ca3eb7a488b445cdbc0e5147855156))
+
+
+### Reverts
+
+* "fix(deps): update dependency org.jetbrains.exposed:exposed-bom to v1.0.0-rc-4 ([#93](https://github.com/tozydev/phantom/issues/93))" ([0456a0b](https://github.com/tozydev/phantom/commit/0456a0b98be4d129b6d0ce2e281a0223cae15c05))
+
 ## [0.9.1](https://github.com/tozydev/phantom/compare/v0.9.0...v0.9.1) (2025-11-19)
 
 
