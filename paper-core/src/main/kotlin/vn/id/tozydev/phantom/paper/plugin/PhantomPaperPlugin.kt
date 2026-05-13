@@ -2,8 +2,8 @@ package vn.id.tozydev.phantom.paper.plugin
 
 import com.github.shynixn.mccoroutine.folia.SuspendingJavaPlugin
 import dev.jorel.commandapi.CommandAPI
-import dev.jorel.commandapi.CommandAPIBukkitConfig
 import dev.jorel.commandapi.CommandAPILogger
+import dev.jorel.commandapi.CommandAPIPaperConfig
 import vn.id.tozydev.phantom.paper.chat.ChatInputService
 import xyz.xenondevs.invui.InvUI
 
@@ -11,7 +11,7 @@ import xyz.xenondevs.invui.InvUI
  * Base class for Phantom plugins that use the Paper API.
  */
 abstract class PhantomPaperPlugin : SuspendingJavaPlugin() {
-    protected open val configureCommandApi: (CommandAPIBukkitConfig.() -> Unit)? = null
+    protected open val configureCommandApi: (CommandAPIPaperConfig.() -> Unit)? = null
 
     protected val isCommandApiEnabled: Boolean
         get() = configureCommandApi != null
@@ -23,7 +23,7 @@ abstract class PhantomPaperPlugin : SuspendingJavaPlugin() {
         if (isCommandApiEnabled) {
             CommandAPI.setLogger(CommandAPILogger.fromSlf4jLogger(slF4JLogger))
             CommandAPI.onLoad(
-                CommandAPIBukkitConfig(this).apply {
+                CommandAPIPaperConfig(this).apply {
                     configureCommandApi?.invoke(this)
                 },
             )

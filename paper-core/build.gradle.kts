@@ -46,8 +46,8 @@ dependencies {
         exclude(group = "com.google.errorprone")
     }
 
-    api(libs.commandapi.bukkit.shade.mojmap)
-    api(libs.commandapi.bukkit.kotlin)
+    api(libs.commandapi.paper.shade)
+    api(libs.commandapi.kotlin.paper)
 
     api(libs.invui)
     api(libs.invuiKotlin) {
